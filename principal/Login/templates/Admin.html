@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU ADMINISTRADOR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ADMIN.css' %}">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" >
+        <div class="container-fluid">        
+                  <h1 >Menu Administrador</h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'TiposGarantias:listartiga' %}">🖋️  Tipos de Garantías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}">🏠Home</a>
+                    </li>
+                    <li>   </li><li>   </li><li>   </li><li>   </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="{% url 'cerrar' %}">Cerrar  Sesión</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+
+
+
+<div class="container text-center" style="margin-left: 500px; margin-right: 500px;" style="margin-top; 50px;">
+    <div class="row">
+        <div class="col-4">
+            <img src="{% static 'img/vehiculos.jpg' %}" alt="..." class="img-fluid" width="400px" height="400px">
+            <a href="{%  url 'Vehiculo:listarvehiculo' %}" class="btn btn-primary">Vehiculos</a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'img/pexels-pixabay-326576.jpg' %}" alt="..." class="img-fluid" width="400px" height="400px">
+            <a href="#" class="btn btn-primary">Usuarios</a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-4">
+            <img src="{% static 'img/pexels-dan-cristian-pădureț-1476321.jpg' %}" alt="..." class="img-fluid" width="400px" height="400px">
+            <a href="{%  url 'Garantias:listargarantia' %}" class="btn btn-primary">Garantias</a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'img/registro.jpg' %}" alt="..." class="img-fluid" width="400px" height="400px">
+            <a href="#" class="btn btn-primary">Diagnosticos</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+

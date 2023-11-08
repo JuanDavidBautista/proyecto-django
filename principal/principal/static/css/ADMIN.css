@@ -1,0 +1,47 @@
+
+
+
+
+
+
+img {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    a {
+        margin-top: 0;
+    }
+}
+
+
+
+body{
+
+    background: #CCE5FF;
+}
+
+.nav-item{
+
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+
+.center-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
